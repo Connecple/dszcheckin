@@ -1,135 +1,100 @@
 
 <!DOCTYPE html>
 <html>
-<head>
-    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-            crossorigin="anonymous"></script>
-    <link rel="apple-touch-icon" sizes="57x57" href="/images/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/images/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/images/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/images/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/images/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/images/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/images/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/images/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="/images/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/images/favicon/manifest.json">
+    <head>
+        <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+                integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+                crossorigin="anonymous"></script>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+		<link rel="apple-touch-icon" sizes="57x57" href="/images/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/images/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/images/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/images/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/images/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/images/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/images/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/images/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="/images/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+        <link rel="manifest" href="/images/favicon/manifest.json">
 
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/images/favicon/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-    <title>TEST</title>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/images/favicon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <title>test</title>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-</head>
-<body>
-<div class="container-fluid" style="position:relative;text-align: center;">
-    <div class="menu">
-    <!-- <img id="Bimgbtn1" src="/images/page/TOP/button-home.png"/> -->
-    <div class="BOTTOM w-100">
-        <!-- <div><img id="Bimgbtn1" src="/images/page/TOP/b1.svg"/></div> -->
-        <div><img id="Bimgbtn1" src="/images/page/TOP/button-home.png"/></div>
-        <div><img id="Bimgbtn2" src="/images/page/TOP/button-info.png"/></div>
-        <div><img id="Bimgbtn3" src="/images/page/TOP/button-plan.png"/></div>
-        <div><img id="Bimgbtn4" src="/images/page/TOP/button-apply.png"/></div>
-        <div><img id="Bimgbtn5" src="/images/page/TOP/button-award.png"/></div>
-    </div>
-</div>
-    <img id="middle1-2_img" src="images/page/plan.png" data-aos="fade-up"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+              integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel='stylesheet' href='/stylesheets/style.css' />
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    </head>
+    <body>
+        <div class="container-fluid" style="position:relative;">
+            <div class="menu">
     
-    <img id="middle1-2_img" src="images/page/PLAN/plan02.png" data-aos="fade-up"/>
-    <div class="explain-button">
-        <!-- <img id="bt1" src="images/page/PLAN/explain-pdf.png" data-aos="fade-up"/>
-        <a href="2022_제9회_소프트웨어_개발보안_경진대회_운영요강.pdf"><img id="bt1" src="images/page/PLAN/explain-pdf.png" data-aos="fade-up"/></a>
-        <img id="bt2" src="images/page/PLAN/explain-apply.png" data-aos="fade-up"/> -->
-
-        <img id="bt1" src="images/page/PLAN/explain-review.svg" data-aos="fade-up" />
-    </div>
-    
-    <!-- <div class="btndiv">
-        <img id="middle1-3_img" src="images/page/PLAN/plan2.svg" data-aos="fade-up"/>
-        <div class="apply_bottom" style="margin-top: -10%;padding-top:0;">
-            <div><img id="bt2" src="images/page/PLAN/btn2.svg"/></div>
-        </div>
-        <img id="middle1-3_img" src="images/page/PLAN/plan3.svg" data-aos="fade-up"/>
-        <img id="middle1-3_img" src="images/page/PLAN/plan4.svg" data-aos="fade-up"/>
-        <img id="middle1-3_img" src="images/page/PLAN/plan5.svg" data-aos="fade-up"/>
-        <img id="middle1-3_img" src="images/page/PLAN/plan6.svg" data-aos="fade-up"/>
-        <img id="middle1-3_img" src="images/page/PLAN/plan7.svg" data-aos="fade-up"/>
-    </div> -->
-    
-    <!-- <div class="btndiv">
-        <img id="middle1-3_img" src="images/page/PLAN/plan3.svg" data-aos="fade-up"/>
-    </div> -->
-</div>
-<div class="w-100 footerb">
-    <div>
-        <div class="foot_logo" style="text-align: center;">
-            <img src="/images/page/footer.png" width="1070">
-        </div>
-        <!-- <div class="foot_info">
-            <p>제 9회 SW개발보안 경진대회</p>
-            <p>[운영사무국 | ㈜컬처메이커스] </p>
-			<p>Tel. 070-4849-2063 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email. <a href="mailto:swcontest@cmcom.kr">swcontest@cmcom.kr</a></p>
-        </div> -->
-    </div>
-</div>
-
-
-</body>
-<script>
-    AOS.init();
-    $(document).ready(function(){
-        var offset = $(".BOTTOM").offset();
-        $('html, body').animate({scrollTop : offset.top },200);
-
-        $('#Bimgbtn1').click(function(){
-    window.open('/','_self');
-    });
-$('#Bimgbtn2').click(function(){
-window.open('/info','_self');
-});
-$('#Bimgbtn3').click(function(){
-window.open('/plan','_self');
-});
-$('#Bimgbtn4').click(function(){
-window.open('/apply','_self');
-});
-$('#Bimgbtn5').click(function(){
-window.open('/award','_self');
-});
-$('#explain').click(function(){
-window.open('/plan', '_self');
-});
-$('#main').click(function(){
-    window.open('/', '_self');
-});
-
-        // $('#bt1').click(function(){
-        //     Swal.fire({
-        //         title: '곧 업로드 예정입니다.',
-        //         text: '',
-        //         html: '',
-        //     });
+				<div class="BOTTOM w-100">
+					<div><img id="Bimgbtn1" src="/images/page/TOP/button-home.png"/></div>
+					<div><img id="Bimgbtn2" src="/images/page/TOP/button-info.png"/></div>
+					<div><img id="Bimgbtn3" src="/images/page/TOP/button-plan.png"/></div>
+					<div><img id="Bimgbtn4" src="/images/page/TOP/button-apply.png"/></div>
+					<div><img id="Bimgbtn5" src="/images/page/TOP/button-award.png"/></div>
+				</div>
+			</div>
             
-        // });
+				<div class="TOP" style="position:relative">
+					<img id="top_img" src="/images/page/main-cloud.png" />
+					<img id="cloud-top-right" src="/images/page/cloud-top-right.png" />
+					<img id="cloud-top-left" src="/images/page/cloud-top-left.png" />
+					<img id="cloud-bottom-right" src="/images/page/cloud-bottom-right.png" />
+					<img id="cloud-bottom-left" src="/images/page/cloud-bottom-left.png" />
 
-        $('#bt1').click(function(){
-            window.open('https://www.youtube.com/watch?v=MM2YlpQZDCY','_blank');
+				</div>
+				
+				<div class="w-100 footerb">
+					<div>
+						<div class="foot_logo" style="text-align: center;">
+							<img src="/images/page/footer.png" width="1070">
+						</div>        
+					</div>
+				</div>
+
+        </div> 
+    </body>
+	
+    <script>
+        AOS.init();
+
+        $(document).ready(function(){
+            $('#Bimgbtn1').click(function(){
+				window.open('/','_self');
+				});
+			$('#Bimgbtn2').click(function(){
+			window.open('/info','_self');
+			});
+			$('#Bimgbtn3').click(function(){
+			window.open('/plan','_self');
+			});
+			$('#Bimgbtn4').click(function(){
+			window.open('/apply','_self');
+			});
+			$('#Bimgbtn5').click(function(){
+			window.open('/award','_self');
+			});
+			$('#explain').click(function(){
+			window.open('/plan', '_self');
+			});
+			$('#main').click(function(){
+				window.open('/', '_self');
+			});
         });
-    });
-
-</script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 </html>
